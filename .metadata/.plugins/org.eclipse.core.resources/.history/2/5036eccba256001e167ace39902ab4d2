@@ -1,0 +1,16 @@
+package ex04;
+
+public class Lotto {
+
+	public static void main(String[] args) {
+		
+		int[] lottoNum = new int[6];
+		
+		for(int i = 0 ; i < lottoNum.length;i++) {
+			int num = (int)(Math.random()*45)+1;
+			lottoNum[i] = num;
+			System.out.println(lottoNum[i]);
+		}
+		
+	}
+}

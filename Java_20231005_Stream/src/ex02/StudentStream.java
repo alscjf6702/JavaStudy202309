@@ -1,0 +1,57 @@
+package ex02;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.OptionalDouble;
+
+class Student{
+	
+	private String name;
+	private int java ;
+	
+	public Student(String name, int java) {
+		this.name = name;
+		this.java = java;
+	}
+
+	public int getJava() {
+		return java;
+	}
+	
+	
+}
+
+
+public class StudentStream {
+
+	public static void main(String[] args) {
+		
+		List<Student> students = new ArrayList<Student>();
+		
+		students.add(new Student("민철", 12));
+		students.add(new Student("화원", 15));
+		students.add(new Student("동구", 16));
+		
+		double avr = students.stream()
+		.mapToInt(s -> s.getJava())
+		.average()
+		.getAsDouble();
+		
+		System.out.printf("평균 : %.2f \n" , avr);
+		 
+		
+		System.out.println("===========================");
+		
+		OptionalDouble average = students.stream()
+				.mapToInt(s -> s.getJava())
+				.average();
+		
+		average.getAsDouble();
+		double orElseThrow = average.orElseThrow();
+		System.out.printf("평균 : %.2f \n",orElseThrow);
+		
+		
+		
+	}
+	
+}

@@ -1,0 +1,16 @@
+package ex06_Interface;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Printable prn = new LPrinter();
+		String msg = "Hello World!";
+		prn.print(msg);
+		
+	
+		
+		
+	}
+	
+}

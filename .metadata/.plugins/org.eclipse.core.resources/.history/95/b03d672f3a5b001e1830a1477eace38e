@@ -1,0 +1,8 @@
+package how;
+
+public class Benz extends Car{
+
+	
+	
+	
+}

@@ -1,0 +1,12 @@
+package ex09_Inher02;
+
+public class BabyCat extends ParentCat{ 
+
+	public String color;
+	
+	void meow() {
+		System.out.println("야옹하고 울다.");
+	}
+	
+	
+}

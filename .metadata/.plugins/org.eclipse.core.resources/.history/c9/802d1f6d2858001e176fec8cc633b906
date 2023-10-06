@@ -1,0 +1,8 @@
+package peopleTest;
+
+public class Hwawon extends People{
+
+	void sleeping() {
+		System.out.println("화원이는 새근새근");
+	}
+}

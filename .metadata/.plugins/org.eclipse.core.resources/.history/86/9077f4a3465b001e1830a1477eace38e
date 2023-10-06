@@ -1,0 +1,34 @@
+package ex00;
+
+class A {
+void funcA() {
+	System.out.println("funcA ..");
+}
+
+}
+
+class B {
+	void funcB() {
+		System.out.println("funcB ..");
+	}
+
+}
+
+class C {
+	void funcC() {
+		System.out.println("funcC ..");
+	}
+
+}
+
+public class 다형성예제 {
+
+	public static void main(String[] args) {
+		A a = new A();
+		a.funcA();
+		
+		
+		
+	}
+
+}

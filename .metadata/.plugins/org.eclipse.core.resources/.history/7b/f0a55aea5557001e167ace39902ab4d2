@@ -1,0 +1,17 @@
+package ex01;
+
+public class TvTest{
+
+	public static void main(String[] args) {
+		
+		Tv tv = new Tv();
+		
+		tv.channel = 8;
+		tv.channelDown();
+		
+		System.out.println(tv);
+		
+		
+	}
+	
+}

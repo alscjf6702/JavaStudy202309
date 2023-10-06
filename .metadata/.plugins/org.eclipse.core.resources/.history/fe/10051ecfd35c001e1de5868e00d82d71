@@ -1,0 +1,9 @@
+package ex10;
+
+public class Object {
+
+	Object obj = new Object();
+	
+	
+	
+}

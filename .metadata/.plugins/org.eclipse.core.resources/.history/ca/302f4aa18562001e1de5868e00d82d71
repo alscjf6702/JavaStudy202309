@@ -1,0 +1,21 @@
+package ex06;
+
+import java.util.function.Consumer;
+import java.util.function.Supplier;
+
+public class Lambda9_1 {
+
+	public static void main(String[] args) {
+
+		int[] arr = {1,2,3,4,5,6,7,8,9,90,11};
+
+		Supplier<Integer> s1 = () -> {int sum = 0; for (int i : arr) sum += i; return sum;};
+		
+		System.out.println(s1.get());
+		
+		
+		Consumer<Integer> con = (arr11 = {333,33,12};) -> {int sum = 0; for (int i : arr) sum += i; return sum;};
+		
+	}
+
+}

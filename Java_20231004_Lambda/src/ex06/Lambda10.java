@@ -1,0 +1,19 @@
+package ex06;
+
+import java.util.function.Predicate;
+
+public class Lambda10 {
+
+	public static void main(String[] args) {
+	
+	Predicate<Integer> pre = (x) ->{System.out.print(x + " : "); return x%2==0;};
+	
+	boolean flag = pre.test((int)(Math.random()*100)+1);
+	
+	String msg = flag == true? "짝수" : "홀수";	
+			
+	System.out.println(msg);
+			
+			
+
+}}

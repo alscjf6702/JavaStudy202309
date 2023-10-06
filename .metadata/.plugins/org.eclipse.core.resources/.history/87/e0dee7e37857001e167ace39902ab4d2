@@ -1,0 +1,5 @@
+package ex08_singlton;
+
+public class Singlton {
+
+}

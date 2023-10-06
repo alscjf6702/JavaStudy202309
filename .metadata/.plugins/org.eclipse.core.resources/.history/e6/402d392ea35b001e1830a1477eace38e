@@ -1,0 +1,20 @@
+package ex01;
+
+public class Mowam {
+
+	String ff = "32313";
+	
+	public static void main(String[] args) {
+		String ff = "23123";
+		String fs = "22";
+		
+		System.out.println(('3'-'0')+('9'-'0'));
+		
+		
+		String doo = "2093";
+		String ko = "2991";
+		
+		System.out.println(Integer.parseInt(doo)+Integer.parseInt(ko));
+	}
+	
+}

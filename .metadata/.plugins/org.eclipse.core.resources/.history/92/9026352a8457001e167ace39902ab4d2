@@ -1,0 +1,7 @@
+package ex09_Inher;
+
+public class SmartPhone extends Phone{
+
+	
+	
+}

@@ -1,0 +1,13 @@
+package ex06_Interface;
+
+public class SPrinter implements Printable{
+
+	@Override
+	public void print(String msg) {
+		System.out.println("삼성프린터 이용 출력 : ");
+		System.out.println(msg);
+	}
+
+	
+	
+}

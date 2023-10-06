@@ -1,0 +1,17 @@
+package peopleTest;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		People p = new People();
+		People p1 = new Minchul();
+		People p2 = new Hwawon();
+	
+		p.sleeping();
+		p1.sleeping();
+		p2.sleeping();
+		
+		
+	
+}

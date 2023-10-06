@@ -1,0 +1,38 @@
+package ex06;
+
+@FunctionalInterface
+interface Arr {
+	int sumArr(int[] arr);
+}
+
+//class Jj implements Arr {
+//	@Override
+//	public int sumArr(int[] arr) {
+//		int sum = 0;
+//		for (int i : arr) {
+//			sum += i;
+//		}
+//		return sum;
+//	}
+//}
+
+public class Lambda10 {
+
+	public static void main(String[] args) {
+
+//		Jj j = new Jj();
+//		System.out.println(j.sumArr(arr55));
+
+		// 주석 처리한 부분을 lambda식으로 재배치 한 것
+
+		Arr ar =  arr -> {int sum = 0; for (int i : arr) sum += i; return sum;};
+
+		int[] arr55 = { 1, 2, 4, 6, 7, 8, 4, 2, 6, 6, 72 };
+		System.out.println(ar.sumArr(arr55));
+		
+		int result = ar.sumArr(new int[] {1,4,12,2,4,5,15,152,5123});
+		System.out.println(result);
+				
+	}
+
+}

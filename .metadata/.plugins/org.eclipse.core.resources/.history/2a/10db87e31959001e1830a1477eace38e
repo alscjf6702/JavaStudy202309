@@ -1,0 +1,11 @@
+package teacher;
+
+public class Main {
+	public static void main(String[] args) {
+
+		Student s = new Student("김민철", 30, 100, 99, 87);
+
+		System.out.println(s);
+
+	}
+}

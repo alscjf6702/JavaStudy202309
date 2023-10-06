@@ -1,0 +1,16 @@
+package ex06;
+
+interface Printable4 {
+	void max(int num1, int num2);
+}
+
+public class Lambda4 {
+
+	public static void main(String[] args) {
+
+		Printable3 p =(msg)->System.out.println(msg);
+				
+		p.print("msg print3");
+	}
+
+}

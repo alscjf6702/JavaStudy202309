@@ -1,0 +1,15 @@
+package ex14;
+
+public class OtherExam2 {
+
+	public static void main(String[] args) {
+		
+		int[] arr = {1,7,3,7,8,9,10,2,4};
+		
+		for(int i : arr) {
+			System.out.println(i);
+		}
+		
+	}
+	
+}

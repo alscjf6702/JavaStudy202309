@@ -1,0 +1,15 @@
+package ex09_Inher;
+
+public class SmartPhone extends Phone{
+
+	public boolean wifi;
+	
+	public void setWifi(boolean wifi) {
+		this.wifi = wifi;
+	}
+	
+	public void youtube() {
+		System.out.println("유튜브 접속한다.");
+	}
+	
+}

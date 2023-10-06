@@ -1,0 +1,20 @@
+package ex03;
+
+import java.util.Scanner;
+
+public class TvTest{
+
+	public static void main(String[] args) {
+		
+		Tv tv = new Tv(10);
+
+		System.out.println(tv.channel);
+		
+		tv.channelUp(10);
+		System.out.println(tv.channel);
+		
+		tv.channelDown();
+		System.out.println(tv.channel);
+	}
+	
+}

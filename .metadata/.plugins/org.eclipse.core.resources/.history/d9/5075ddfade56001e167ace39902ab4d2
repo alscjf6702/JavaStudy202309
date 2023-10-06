@@ -1,0 +1,32 @@
+
+public class Exam01 {
+	public static void main(String[] args) {
+		//2+4+6...100의 합
+		ex01();
+		
+		//
+		ex02();
+
+	}
+
+	public static void ex01() {
+	int sum = 0;
+
+	for (int i = 0; i <= 100; i = i + 2) {
+		sum += i;
+	}
+
+	System.out.println("2+4+6+...100의 합 : " + sum);
+	}
+
+	public static void ex02() {
+		int num = 0 ;
+		for(int i=5; i<=50; i = i+5) {
+			num = i;
+			System.out.print(num + "\t");
+		}
+		
+	}
+	
+	
+}

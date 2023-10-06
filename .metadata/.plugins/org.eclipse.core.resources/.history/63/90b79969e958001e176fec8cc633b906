@@ -1,0 +1,27 @@
+package ex02;
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		
+		
+		
+		Person p1 = new Person("김민철" , 20);
+		Person p2 = new Person("김민철" , 20);
+		
+	}
+	
+}
+
+
+class Person{
+	String name;
+	int age;
+	
+	public Person(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+	
+}
+

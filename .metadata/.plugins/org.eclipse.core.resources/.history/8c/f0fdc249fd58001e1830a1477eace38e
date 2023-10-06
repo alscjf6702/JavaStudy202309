@@ -1,0 +1,37 @@
+package ex03;
+
+import java.util.Scanner;
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		System.out.println("예외처리1");
+		System.out.println("예외처리2");
+		System.out.println("예외처리3");
+		System.out.println("예외처리4");
+
+		Scanner scan = new Scanner(System.in);
+		try {
+			System.out.print("정수 입력 : ");
+			int num = scan.nextInt();
+			System.out.println(5/num);	
+			
+		} catch (ArithmeticException e) {
+			e.getMessage();
+		e.printStackTrace();
+		}finally {
+			System.out.println("예외처리 종료");
+		
+		}
+		
+		System.out.println("예외처리5");
+		System.out.println("예외처리6");
+		System.out.println("예외처리7");
+		System.out.println("예외처리8");
+		System.out.println("예외처리9");
+		System.out.println("예외처리10");
+		System.out.println("프로그램 종료!");
+		
+	}
+	
+}

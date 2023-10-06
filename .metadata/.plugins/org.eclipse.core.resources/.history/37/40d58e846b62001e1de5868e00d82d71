@@ -1,0 +1,33 @@
+package ex06;
+
+@FunctionalInterface
+interface Arr {
+	int sumArr(int[] arr);
+}
+
+class Jj implements Arr {
+public int sumArr(int[] arr) {
+	int sum  = 0 ;
+	for(int i : arr) {
+		sum+=i;
+	}
+	return sum;
+}
+}
+
+public class Lambda9 {
+
+	public static void main(String[] args) {
+
+		Jj j = new Jj();
+		
+//		Arr ar = (int[] arr)-> {int sum = 0; for(int i : arr) sum+=i; 
+//		return sum;
+//		};
+		int[] arr55 = { 1, 2, 4, 6, 7, 8, 4, 2, 6, 6, 72 };
+
+		System.out.println(j.sumArr(arr55));
+
+	}
+
+}

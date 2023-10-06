@@ -1,0 +1,33 @@
+package ex06;
+
+import java.util.function.Function;
+import java.util.function.Supplier;
+
+public class Lambda9_1 {
+
+	public static void main(String[] args) {
+
+		int[] arr = {1,2,3,4,5,6,7,8,9,90,11};
+
+		Supplier<Integer> s1 = () -> {int sum = 0; for (int i : arr) sum += i; return sum;};
+		
+		System.out.println(s1.get());
+		
+
+		Function<Integer[], Integer> f1 = new Function<Integer[], Integer>() {
+			
+			@Override
+			public Integer apply(Integer[] arr) {
+				int sum = 0 ; 
+				for(int i : arr) sum +=i;
+				return sum;
+			}
+		};
+		
+		int result = f1.apply(new Integer[] {1,2,3,4,5});
+		System.out.println(result);
+		
+		
+	}
+
+}

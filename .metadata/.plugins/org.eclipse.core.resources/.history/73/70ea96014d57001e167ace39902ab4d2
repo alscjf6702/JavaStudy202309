@@ -1,0 +1,23 @@
+
+public class Exam02 {
+
+	public static void main(String[] args) {
+		// 아스키코드를 알파벳으로 변환하기
+		int a = 78;
+		System.out.printf("%c", a);
+		System.out.printf("%c\n", 77);
+
+		System.out.println("1부터 30까지의 정수에서 짝수만 한 줄에 3개씩 출력하라");
+		ex05();
+
+	}
+
+	public static void ex05() {
+		for (int i = 2; i <= 30; i = i + 2) {
+			if (i % 8 == 0 || i%14==0) {
+				System.out.println(" ");
+			}
+			System.out.print(i + " ");
+		}
+	}
+}

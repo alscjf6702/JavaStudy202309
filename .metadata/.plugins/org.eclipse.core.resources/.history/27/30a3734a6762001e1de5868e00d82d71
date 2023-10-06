@@ -1,0 +1,20 @@
+package ex06;
+
+@FunctionalInterface
+interface Square {
+	int square(int x);
+	
+}
+
+public class Lambda7 {
+
+	public static void main(String[] args) {
+
+		Print p = (name , i) -> System.out.println(name + " = " + i); 
+
+		p.printVar("김민철", 33);
+		
+
+	}
+
+}

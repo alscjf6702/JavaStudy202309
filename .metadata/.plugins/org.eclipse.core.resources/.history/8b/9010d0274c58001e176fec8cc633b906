@@ -1,0 +1,5 @@
+package sevenProblem;
+
+public interface DataAccessObject {
+
+}

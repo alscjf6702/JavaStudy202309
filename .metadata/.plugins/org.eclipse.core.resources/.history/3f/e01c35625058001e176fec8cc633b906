@@ -1,0 +1,9 @@
+package sevenProblem;
+
+public class MyBatisDao extends OracleDao{
+
+	public void put() {
+		System.out.println("hi");
+	}
+	
+}

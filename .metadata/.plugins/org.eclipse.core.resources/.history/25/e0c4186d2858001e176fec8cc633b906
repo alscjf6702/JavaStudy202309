@@ -1,0 +1,19 @@
+package peopleTest;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		People p = new People();
+		People m = new Minchul();
+		People h = new Hwawon();
+	
+		p.sleeping();
+		m.sleeping();
+		h.sleeping();
+		
+		p.eat();
+		m.eat();
+		h.eat();
+	}
+}

@@ -1,0 +1,23 @@
+package hello;
+
+import java.security.SecureRandom;
+
+public class Java {
+public static void main(String[] args) {
+	
+	Hello hi = Hello.getInstance();
+	
+	System.out.println(hi.app);
+	
+	SecureRandom scrRan = new SecureRandom();
+	
+	int[] scr = new int[6];
+	
+	for(int i = 0 ; i<= 6 ; i++) {
+		scr[i] = scrRan.nextInt(45);
+		System.out.println(scr[i]);
+	}
+	
+	
+}
+}

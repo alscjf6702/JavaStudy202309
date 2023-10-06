@@ -1,0 +1,25 @@
+package ex06;
+
+import java.util.function.IntConsumer;
+
+@FunctionalInterface
+interface Square {
+	int square(int x);
+	
+}
+
+public class Lambda7_1 {
+
+	public static void main(String[] args) {
+
+		
+		
+		Square s = (x) -> x *x ;
+		
+		int result = s.square(3);
+		System.out.println(result);
+		
+
+	}
+
+}

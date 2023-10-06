@@ -1,0 +1,84 @@
+package ex06;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class HearingTest extends JFrame {
+    private int currentSoundIndex = 0;
+    private String[] sounds = {"Sound1.wav", "Sound2.wav", "Sound3.wav", "Sound4.wav", "Sound5.wav"};
+    private String[] userResponses = new String[5];
+
+    private JLabel instructionLabel;
+    private JButton yesButton;
+    private JButton noButton;
+
+    public HearingTest() {
+        setTitle("청력 검사 시뮬레이션");
+        setSize(400, 200);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setLayout(new FlowLayout());
+
+        instructionLabel = new JLabel("다음 소리를 듣고, 들리는 소리에 따라 버튼을 눌러주세요.");
+        yesButton = new JButton("듣는다");
+        noButton = new JButton("들리지 않는다");
+
+        add(instructionLabel);
+        add(yesButton);
+        add(noButton);
+
+        yesButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                recordResponse("Yes");
+            }
+        });
+
+        noButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                recordResponse("No");
+            }
+        });
+
+        playNextSound();
+    }
+
+    private void recordResponse(String response) {
+        userResponses[currentSoundIndex] = response;
+        currentSoundIndex++;
+        if (currentSoundIndex < 5) {
+            playNextSound();
+        } else {
+            showResults();
+        }
+    }
+
+    private void playNextSound() {
+        if (currentSoundIndex < 5) {
+            // 현재 사운드를 재생하는 코드 추가
+            String soundName = sounds[currentSoundIndex];
+            System.out.println("Playing sound: " + soundName);
+        }
+    }
+
+    private void showResults() {
+        // 결과를 표시하는 코드 추가
+        StringBuilder result = new StringBuilder("검사 결과:\n");
+        for (int i = 0; i < 5; i++) {
+            result.append("Sound ").append(i + 1).append(": ").append(userResponses[i]).append("\n");
+        }
+        JOptionPane.showMessageDialog(this, result.toString(), "결과", JOptionPane.INFORMATION_MESSAGE);
+        System.exit(0);
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                new HearingTest().setVisible(true);
+            }
+        });
+    }
+}

@@ -1,0 +1,37 @@
+package sevenProblem;
+
+public class DaoExample {
+	public static void dbWork(DataAccessObject dao) {
+	dao.select();
+	dao.insert();
+	dao.update();
+	dao.delete();
+	
+	}
+	
+	public static void main(String[] args) {
+		dbWork(new OracleDao());
+		dbWork(new MySqlDao());
+		
+		
+		System.out.println("===========");
+		DataAccessObject data = new MySqlDao();
+		data.select();
+		data.insert();
+		data.update();
+		data.delete();
+		
+		data = new OracleDao();
+		data.select();
+		data.insert();
+		data.update();
+		data.delete();
+		
+		DataAccessObject data2= new MyBatisDao();
+		data2.insert();
+		data2.select();
+		data2.update();
+		data2.delete();
+		data2.put();
+	}
+}

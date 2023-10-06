@@ -1,0 +1,30 @@
+package ex14;
+
+import java.util.Arrays;
+
+public class OtherExam2 {
+
+	public static void main(String[] args) {
+
+		int[] arr = { 1, 7, 3, 7, 8, 9, 10, 2, 4 };
+
+		for (int i : arr) {
+			System.out.print(i + " ");
+		}
+		System.out.println();
+		System.out.println();
+
+		Arrays.sort(arr);
+		for(int i : arr) {
+			System.out.print(i + " ");
+		}
+		
+		String[] str = {"Box" , "Toy", "Toy", "Robot", "box", "robot"};
+		Arrays.sort(str);
+		for(String s : str) {
+			System.out.print(s + " ");
+		}
+		
+	}
+
+}

@@ -1,0 +1,39 @@
+package ex06;
+
+import java.util.function.BiFunction;
+import java.util.function.Function;
+
+//@FunctionalInterface
+//interface Square2 {
+//	int square(int x);
+//	
+//}
+
+public class Lambda7_1 {
+
+	public static void main(String[] args) {
+
+//		IntConsumer intCon = x-> System.out.println(x*x);		
+//		Square s = x -> x * x;
+		
+//		int result = s.square(3);
+//		intCon.accept(result);
+//		System.out.println(result);
+
+		//Fucntion<intger,Integer> => 2개의 정수
+		Function<Integer, Integer> f1 = x -> x*x;
+		
+		System.out.println(f1.apply(5));
+		//Bifunction<Integer,Integer,Integer>  => 3개의 정수
+		BiFunction<Integer,Integer,Double> bif1 = (x,y) -> (x+y)*1.0;
+		System.out.println(bif1.apply(3, 33));
+
+		//Bifunction<Integer,Integer,Integer>  => 3개의 정수
+		BiFunction<Integer,Integer,Integer> bif2 = (x,y) -> x-y;
+		System.out.println(bif2.apply(3, 33));
+		
+		
+
+	}
+
+}

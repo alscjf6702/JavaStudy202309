@@ -1,0 +1,57 @@
+package ex02;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class AirplaneDataCrawler {
+    public static void main(String[] args) {
+        try {
+            // 크롤링할 웹 사이트의 URL 정의
+            String url = "https://www.flyasiana.com/C/US/KO/index";
+
+            // 웹 사이트에 연결하고 내용을 가져옴
+            Document document = Jsoup.connect(url).get();
+
+            // 필요한 데이터를 파싱하고 추출
+            List<String> pastData = new ArrayList<>();
+            List<String> futureData = new ArrayList<>();
+
+            // 과거 데이터와 미래 데이터를 포함하는 HTML 요소 선택
+            Elements pastElements = document.select(".past-data"); // 선택자를 웹 사이트에 맞게 수정
+            Elements futureElements = document.select(".future-data"); // 선택자를 웹 사이트에 맞게 수정
+
+            for (Element element : pastElements) {
+                pastData.add(element.text());
+                if (pastData.size() >= 100) {
+                    break; // 과거 데이터를 100개 수집하면 종료
+                }
+            }
+
+            for (Element element : futureElements) {
+                futureData.add(element.text());
+                if (futureData.size() >= 100) {
+                    break; // 미래 데이터를 100개 수집하면 종료
+                }
+            }
+
+            // 수집한 데이터 출력
+            System.out.println("과거 데이터:");
+            for (String data : pastData) {
+                System.out.println(data);
+            }
+
+            System.out.println("미래 데이터:");
+            for (String data : futureData) {
+                System.out.println(data);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}

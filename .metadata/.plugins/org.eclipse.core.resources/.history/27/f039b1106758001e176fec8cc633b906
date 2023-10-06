@@ -1,0 +1,16 @@
+package ex11;
+
+public class MainClass {
+	public static void main(String[] args) {
+		
+		func(new C());
+		
+	}
+	
+	static void func(Object obj) {
+		
+		A a = (A)obj;
+	
+	
+}
+}

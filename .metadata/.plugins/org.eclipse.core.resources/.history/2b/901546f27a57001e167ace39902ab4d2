@@ -1,0 +1,14 @@
+package ex08_singleton;
+
+public class SingletonExam {
+
+	public static void main(String[] args) {
+	
+		
+		
+		
+	}
+	
+	
+	
+}

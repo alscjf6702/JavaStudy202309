@@ -1,0 +1,13 @@
+package ex06_Interface;
+
+public class LPrinter implements Printable{
+
+	@Override
+	public void print(String msg) {
+		System.out.println("Lg 프린터 출력 : ");
+		System.out.println(msg);
+	}
+
+	
+	
+}

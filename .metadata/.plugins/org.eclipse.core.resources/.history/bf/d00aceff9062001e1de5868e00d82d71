@@ -1,0 +1,12 @@
+package ex08;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class ForeachExam {
+
+	public static void main(String[] args) {
+		List<String> lists = Arrays.asList("Box", "Toy", "Robot","Toy","Box");
+	}
+	
+}

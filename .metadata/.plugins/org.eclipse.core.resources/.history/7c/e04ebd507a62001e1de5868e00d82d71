@@ -1,0 +1,19 @@
+package ex06;
+
+import java.util.function.IntConsumer;
+
+@FunctionalInterface
+interface Square {
+	int square(int x);
+	
+}
+
+public class Lambda7_1 {
+
+	public static void main(String[] args) {
+
+		IntConsumer intCon = (x) -> (x*x)
+
+	}
+
+}

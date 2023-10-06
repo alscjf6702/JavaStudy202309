@@ -1,0 +1,20 @@
+package ex06;
+
+@FunctionalInterface
+interface Square {
+	int square(int x);
+	
+}
+
+public class Lambda7 {
+
+	public static void main(String[] args) {
+
+		Square s = (x) -> x *x ;
+		
+		s.square(3);
+		
+
+	}
+
+}

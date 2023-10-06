@@ -1,0 +1,16 @@
+package hello;
+
+import java.security.SecureRandom;
+
+public class Java {
+public static void main(String[] args) {
+	
+	Hello hi = Hello.getInstance();
+	
+	System.out.println(hi.app);
+	
+	SecureRandom scrRan = new SecureRandom();
+	
+	int scr = scrRan.nextInt(2);
+}
+}

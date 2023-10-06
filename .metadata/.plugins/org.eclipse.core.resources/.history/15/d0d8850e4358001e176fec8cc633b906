@@ -1,0 +1,13 @@
+package ex06_Interface;
+
+public class printer implements Printable{
+
+	@Override
+	public void print(String msg) {
+		System.out.println(msg);
+		
+	}
+
+	
+	
+}

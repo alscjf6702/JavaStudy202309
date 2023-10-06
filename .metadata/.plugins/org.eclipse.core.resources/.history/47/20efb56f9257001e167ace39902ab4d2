@@ -1,0 +1,10 @@
+package ex09_Inher03;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		ConstructorAndSuper aa = new ConstructorAndSuper();
+		
+		
+	}
+}

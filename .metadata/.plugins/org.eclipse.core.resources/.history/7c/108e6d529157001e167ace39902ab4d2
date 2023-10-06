@@ -1,0 +1,11 @@
+package ex09_Inher03;
+
+public class Main {
+	public static void main(String[] args) {
+
+		HybridCar car = new HybridCar(0, 0, );
+		
+		
+		
+	}
+}

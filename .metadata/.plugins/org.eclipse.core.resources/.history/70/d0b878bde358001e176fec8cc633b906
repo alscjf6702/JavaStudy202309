@@ -1,0 +1,23 @@
+package ex01;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> dd = new ArrayList<String>();
+		dd.add("ggg");
+		dd.add("gg");
+		dd.add("wodo");
+		dd.add(3, "gokgo");
+		System.out.println(dd);
+
+		System.out.println(dd.isEmpty());
+
+
+		
+	}
+	
+}

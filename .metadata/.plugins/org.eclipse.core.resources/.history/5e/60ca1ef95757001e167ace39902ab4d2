@@ -1,0 +1,38 @@
+package ex01;
+
+import java.util.Scanner;
+
+public class TvTest{
+
+	public static void main(String[] args) {
+		
+		Tv tv = new Tv();
+		
+		tv.channel = 8;
+		tv.channelDown();
+		
+		System.out.println(tv.channel);
+		
+		
+		Tv tv2 = new Tv();
+		
+		System.out.println(tv2.channel);
+		
+		tv2.channelUp();
+		tv2.channelUp();
+		tv2.channelUp();
+
+		System.out.println(tv2.channel);
+		
+		Tv tv3;
+		tv3 = tv;
+		
+		System.out.println(tv3.channel);
+	
+		tv3.channel = 100;
+		System.out.println(tv.channel);
+		System.out.println(tv3.channel);
+		
+	}
+	
+}

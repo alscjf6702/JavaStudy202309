@@ -1,0 +1,28 @@
+package ex02;
+
+public class Tv {
+//public이 default
+	String color;
+	boolean power;
+	int channel;
+	
+	
+	
+	Tv() {
+		System.out.println("기본 생성자");
+	}
+
+	void power() {
+		power = !power;
+	}
+	
+	void channelUp() {
+		channel++;
+	}
+	
+	void channelDown() {
+		channel--;
+	}
+	
+	
+}
