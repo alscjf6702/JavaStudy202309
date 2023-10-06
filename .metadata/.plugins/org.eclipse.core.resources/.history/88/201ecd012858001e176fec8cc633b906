@@ -1,8 +1,0 @@
-package peopleTest;
-
-public class Minchul extends People{
-
-	void sleeping() {
-		System.out.println("드르릉드르릉");
-	}
-}

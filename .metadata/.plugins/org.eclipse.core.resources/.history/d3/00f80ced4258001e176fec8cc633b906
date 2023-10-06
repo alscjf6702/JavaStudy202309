@@ -1,7 +1,0 @@
-package ex06_Interface;
-
-public interface Printable {
-
-	
-	
-}

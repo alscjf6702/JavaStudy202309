@@ -1,9 +1,0 @@
-package sevenProblem;
-
-abstract public class DataAccessObject {
-	abstract public void select();
-	abstract public void insert();
-	abstract public void update();
-	abstract public void delete();
-	
-}

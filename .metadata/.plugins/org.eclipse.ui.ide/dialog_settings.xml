@@ -15,6 +15,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\minchul\Desktop\Java_20231002_Project"/>
 			<item value="C:\minchul\JavaWorks\work\java\Java_20230925_Generices"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">

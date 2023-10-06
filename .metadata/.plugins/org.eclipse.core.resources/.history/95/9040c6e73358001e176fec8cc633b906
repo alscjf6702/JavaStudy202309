@@ -1,7 +1,0 @@
-package ex04;
-
-public class A {
-	static void funcA() {
-		System.out.println("A class");
-	}
-}

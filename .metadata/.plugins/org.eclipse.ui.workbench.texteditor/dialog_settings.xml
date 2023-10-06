@@ -6,12 +6,14 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="w"/>
+		<item key="selection" value="set"/>
 		<list key="findhistory">
+			<item value="list"/>
 			<item value="w"/>
 			<item value="package ex09;"/>
 		</list>
 		<list key="replacehistory">
+			<item value="set"/>
 			<item value="writer"/>
 		</list>
 	</section>

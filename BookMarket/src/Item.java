@@ -1,12 +1,9 @@
-
-abstract public class Item {
-
+public abstract class Item {
 	String bookId;
 	String name;
 	int unitPrice;
 
 	public Item(String bookId, String name, int unitPrice) {
-		super();
 		this.bookId = bookId;
 		this.name = name;
 		this.unitPrice = unitPrice;
@@ -20,8 +17,7 @@ abstract public class Item {
 
 	abstract void setBookId(String bookId);
 
-	abstract void setname(String name);
+	abstract void setName(String name);
 
 	abstract void setUnitPrice(int unitPrice);
-
 }
