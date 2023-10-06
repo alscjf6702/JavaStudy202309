@@ -29,6 +29,7 @@ class Printer {
 		notify();
 	}
 }
+//isHelloTurn을 열쇠로 사용해서 World가 동시에 실행 되는게 아니라 Hello가 실행되고 나가면 World가 실행됨 
 
 public class CurrentThreadName7 {
 
